@@ -1,7 +1,4 @@
-```
-### **README.md**
 
-````markdown
 # EmployWise Frontend Assignment (EWFA)
 
 This repository contains the solution for the EmployWise Frontend Assignment. The project is a React application that integrates with the Reqres API to perform basic user management functions such as authentication, user listing, editing, and deleting users.
@@ -41,14 +38,14 @@ Ensure you have the following installed:
 ### **Installation**
 
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/qbikle/ewfa.git
    cd ewfa
    ```
-````
+
 
 2. Install dependencies using Bun:
-   ```bash
+   ```
    bun install
    ```
 
@@ -58,7 +55,7 @@ Ensure you have the following installed:
 
 1. Start the development server:
 
-   ```bash
+   ```
    bun start
    ```
 
@@ -73,7 +70,7 @@ Ensure you have the following installed:
 
 To create a production build:
 
-```bash
+```
 bun run build
 ```
 
@@ -160,7 +157,7 @@ If you'd like to contribute:
 
 If you have any questions or feedback, feel free to contact me via GitHub or create an issue in this repository.
 
-````
+
 
 ---
 
@@ -172,6 +169,6 @@ If you have any questions or feedback, feel free to contact me via GitHub or cre
    git add README.md
    git commit -m "Add README file"
    git push
-````
+
 
 Let me know if you need help with anything else! 🚀
