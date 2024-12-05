@@ -54,6 +54,9 @@ const Users: React.FC = () => {
     setAlertVisible(true);
     setShowAlert(true);
     updatedUser.avatar = users.find((user) => user.id === id)?.avatar || "";
+    setUsers(
+      users.map((user) => (user.id === id ? { ...user, ...updatedUser } : user))
+    );
   };
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
