@@ -1,6 +1,3 @@
-Here’s a **README.md** file tailored to your project. It includes instructions for setup, running the project, and any assumptions or considerations made.
-
----
 
 ### **README.md**
 
