@@ -1,46 +1,180 @@
-# Getting Started with Create React App
+Here’s a **README.md** file tailored to your project. It includes instructions for setup, running the project, and any assumptions or considerations made.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### **README.md**
 
-In the project directory, you can run:
+````markdown
+# EmployWise Frontend Assignment (EWFA)
 
-### `npm start`
+This repository contains the solution for the EmployWise Frontend Assignment. The project is a React application that integrates with the Reqres API to perform basic user management functions such as authentication, user listing, editing, and deleting users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **Features**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Authentication**:
 
-### `npm test`
+   - Login screen for users with validation.
+   - Token-based authentication using the Reqres API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **User Management**:
 
-### `npm run build`
+   - Displays a paginated list of users.
+   - Users can edit their details (first name, last name, and email).
+   - Users can be deleted with appropriate feedback.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **UI/UX**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Fully responsive design with modern styling using TailwindCSS.
+   - Smooth animations for alerts and transitions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Custom Alerts**:
+   - Pop-up alert notifications at the bottom-left of the screen for error/success messages.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Getting Started**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Prerequisites**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Ensure you have the following installed:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Node.js](https://nodejs.org/) (v16 or higher) [OR]
+- [Bun.js](https://bun.sh/) (v0.7 or higher)
 
-## Learn More
+### **Installation**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/qbikle/ewfa.git
+   cd ewfa
+   ```
+````
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies using Bun:
+   ```bash
+   bun install
+   ```
+
+---
+
+## **Running the Application**
+
+1. Start the development server:
+
+   ```bash
+   bun start
+   ```
+
+2. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## **Building for Production**
+
+To create a production build:
+
+```bash
+bun run build
+```
+
+The production files will be available in the `build` folder.
+
+---
+
+## **API Integration**
+
+This application integrates with the [Reqres API](https://reqres.in/) for user management. Below are the key API endpoints used:
+
+- **Login**:
+
+  - Endpoint: `POST /api/login`
+  - Body: `{ "email": "eve.holt@reqres.in", "password": "cityslicka" }`
+
+- **List Users**:
+
+  - Endpoint: `GET /api/users?page={page}`
+
+- **Edit User**:
+
+  - Endpoint: `PUT /api/users/{id}`
+
+- **Delete User**:
+  - Endpoint: `DELETE /api/users/{id}`
+
+---
+
+## **Folder Structure**
+
+---
+
+## **Assumptions and Considerations**
+
+1. **Authentication**:
+
+   - The login endpoint (`/api/login`) requires the email `eve.holt@reqres.in` and password `cityslicka` for successful login.
+   - A token is stored in `localStorage` for session management.
+
+2. **Error Handling**:
+
+   - API errors (e.g., invalid credentials, failed updates) are displayed using the custom alert component.
+
+3. **Pagination**:
+
+   - The user list supports pagination, with buttons for navigating between pages.
+
+4. **UI Framework**:
+
+   - TailwindCSS is used for styling. Custom animations and responsive designs are included.
+
+5. **Animations**:
+
+   - Slide-in and slide-out animations are applied to alerts and transitions.
+
+6. **Deployment**:
+   - The application can be hosted on platforms like Vercel or Netlify.
+
+---
+
+## **How to Contribute**
+
+If you'd like to contribute:
+
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a pull request.
+
+---
+
+## **Contact**
+
+If you have any questions or feedback, feel free to contact me via GitHub or create an issue in this repository.
+
+````
+
+---
+
+### **Steps After Adding the README**
+
+1. Save the file as `README.md` in the root of your repository.
+2. Commit and push the file to your GitHub repository:
+   ```bash
+   git add README.md
+   git commit -m "Add README file"
+   git push
+````
+
+Let me know if you need help with anything else! 🚀
